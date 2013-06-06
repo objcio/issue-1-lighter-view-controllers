@@ -44,13 +44,13 @@
 		830DDD00174614A70015841B /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDCFE174614A70015841B /* PhotosViewController.m */; };
 		830DDD01174614A70015841B /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCFF174614A70015841B /* PhotosViewController.xib */; };
 		830DDD03174617FE0015841B /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD02174617FE0015841B /* PhotoCell.xib */; };
-		830DDD071746519D0015841B /* PhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDD051746519D0015841B /* PhotoDetailsViewController.m */; };
-		830DDD081746519D0015841B /* PhotoDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD061746519D0015841B /* PhotoDetailsViewController.xib */; };
+		830DDD071746519D0015841B /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDD051746519D0015841B /* DetailsViewController.m */; };
+		830DDD081746519D0015841B /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD061746519D0015841B /* DetailsViewController.xib */; };
 		D25890E33A3AD8C0885078EA /* PhotoCell+ConfigureForPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D2589AFB9CE73CC0AD9D1CA4 /* PhotoCell+ConfigureForPhoto.m */; };
 		D25890F660237AAA12DBBD2D /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D25892E710DF8060436CED81 /* star.png */; };
 		D258949FDEA7F05E64E81AA3 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D258947BF23A96188E749F91 /* PhotoViewController.m */; };
 		D25898830BD647EB11375F80 /* RatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D258987FABC3EFFC517F5659 /* RatingCell.m */; };
-		D25898C45A38682AC37C3311 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25893599811A7F4D7E9583B /* PhotoDetailViewController.m */; };
+		D25898C45A38682AC37C3311 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25893599811A7F4D7E9583B /* DetailViewController.m */; };
 		D2589A43874AB43F29E2B5D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25895CDCFADCFB9EA3E61C7 /* QuartzCore.framework */; };
 		D2589A50DBD77828B4C7C0A7 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D25897EEE1FD9DB3B3F85D2F /* star@2x.png */; };
 		D2589ED42B476CE696EA172A /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25893A25688870E26562CC7 /* PhotoViewController.xib */; };
@@ -131,14 +131,14 @@
 		830DDCFE174614A70015841B /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
 		830DDCFF174614A70015841B /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
 		830DDD02174617FE0015841B /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
-		830DDD041746519D0015841B /* PhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailsViewController.h; sourceTree = "<group>"; };
-		830DDD051746519D0015841B /* PhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailsViewController.m; sourceTree = "<group>"; };
-		830DDD061746519D0015841B /* PhotoDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailsViewController.xib; sourceTree = "<group>"; };
+		830DDD041746519D0015841B /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		830DDD051746519D0015841B /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		830DDD061746519D0015841B /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		D258909D508549D9B89832C5 /* RatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingCell.h; sourceTree = "<group>"; };
 		D25892E710DF8060436CED81 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		D25893599811A7F4D7E9583B /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
+		D25893599811A7F4D7E9583B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D25893A25688870E26562CC7 /* PhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
-		D25893EFF33ADD7635B67A14 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		D25893EFF33ADD7635B67A14 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D258947BF23A96188E749F91 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		D258948A71340D80EC5D9C27 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		D25895CDCFADCFB9EA3E61C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -231,9 +231,9 @@
 				5A416BA6F139F61955B8A734 /* PhotoCell.m */,
 				5A41644672B329C01770FCEE /* PhotoCell.h */,
 				17BC9A461750EC8D00736FCB /* RatingCell.xib */,
-				830DDD041746519D0015841B /* PhotoDetailsViewController.h */,
-				830DDD051746519D0015841B /* PhotoDetailsViewController.m */,
-				830DDD061746519D0015841B /* PhotoDetailsViewController.xib */,
+				830DDD041746519D0015841B /* DetailsViewController.h */,
+				830DDD051746519D0015841B /* DetailsViewController.m */,
+				830DDD061746519D0015841B /* DetailsViewController.xib */,
 				5A4168CD64B1A9D8E1817D2E /* ArrayDataSource.m */,
 				5A416A69CD8F176AD362E6B0 /* ArrayDataSource.h */,
 				D2589AFB9CE73CC0AD9D1CA4 /* PhotoCell+ConfigureForPhoto.m */,
@@ -244,9 +244,9 @@
 				D258947BF23A96188E749F91 /* PhotoViewController.m */,
 				D258948A71340D80EC5D9C27 /* PhotoViewController.h */,
 				D25893A25688870E26562CC7 /* PhotoViewController.xib */,
-				D25893599811A7F4D7E9583B /* PhotoDetailViewController.m */,
+				D25893599811A7F4D7E9583B /* DetailViewController.m */,
 				17665B45175349E500FD9178 /* PhotoDetailViewController.xib */,
-				D25893EFF33ADD7635B67A14 /* PhotoDetailViewController.h */,
+				D25893EFF33ADD7635B67A14 /* DetailViewController.h */,
 			);
 			path = PhotoData;
 			sourceTree = "<group>";
@@ -422,7 +422,7 @@
 				830DDD01174614A70015841B /* PhotosViewController.xib in Resources */,
 				5A41661336B73FD84E0AE9F7 /* photo-data.bin in Resources */,
 				830DDD03174617FE0015841B /* PhotoCell.xib in Resources */,
-				830DDD081746519D0015841B /* PhotoDetailsViewController.xib in Resources */,
+				830DDD081746519D0015841B /* DetailsViewController.xib in Resources */,
 				3E2DE0AA17490C4C00D3BB5C /* photodata.bin in Resources */,
 				D2589A50DBD77828B4C7C0A7 /* star@2x.png in Resources */,
 				D25890F660237AAA12DBBD2D /* star.png in Resources */,
@@ -471,13 +471,13 @@
 				830DDCFB174614450015841B /* User.m in Sources */,
 				830DDD00174614A70015841B /* PhotosViewController.m in Sources */,
 				5A4161414A3AD672B20FD722 /* PhotoCell.m in Sources */,
-				830DDD071746519D0015841B /* PhotoDetailsViewController.m in Sources */,
+				830DDD071746519D0015841B /* DetailsViewController.m in Sources */,
 				3E2DE0A51749087000D3BB5C /* Store.m in Sources */,
 				5A41683AB29142F1EA465D3A /* ArrayDataSource.m in Sources */,
 				D25890E33A3AD8C0885078EA /* PhotoCell+ConfigureForPhoto.m in Sources */,
 				D25898830BD647EB11375F80 /* RatingCell.m in Sources */,
 				D258949FDEA7F05E64E81AA3 /* PhotoViewController.m in Sources */,
-				D25898C45A38682AC37C3311 /* PhotoDetailViewController.m in Sources */,
+				D25898C45A38682AC37C3311 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

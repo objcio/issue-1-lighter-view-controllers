@@ -1,9 +1,9 @@
 //
-//  PhotoDetailsViewController.h
+//  DetailsViewController.h
 //  objc.io example project (issue #1)
 //
 
-#import "PhotoDetailsViewController.h"
+#import "DetailsViewController.h"
 #import "Photo.h"
 #import "RatingCell.h"
 
@@ -16,11 +16,11 @@ static NSString *const PhotoRatingKey = @"adjustedRating";
 static NSString *const PhotoCreationDateKey = @"creationDate";
 
 
-@interface PhotoDetailsViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface DetailsViewController () <UITableViewDataSource, UITableViewDelegate>
 @end
 
 
-@implementation PhotoDetailsViewController
+@implementation DetailsViewController
 
 - (void)viewDidLoad
 {

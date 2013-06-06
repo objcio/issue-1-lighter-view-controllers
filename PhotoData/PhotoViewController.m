@@ -7,11 +7,11 @@
 #import "PhotoViewController.h"
 #import "Photo.h"
 #import "User.h"
-#import "PhotoDetailsViewController.h"
-#import "PhotoDetailViewController.h"
+#import "DetailsViewController.h"
+#import "DetailViewController.h"
 
 
-@interface PhotoViewController () <PhotoDetailsViewControllerDelegate>
+@interface PhotoViewController () <DetailsViewControllerDelegate>
 @end
 
 
@@ -33,15 +33,15 @@
 
 - (void)addPhotoDetailsTableView
 {
-    PhotoDetailsViewController *photoDetails = [[PhotoDetailsViewController alloc] init];
-    photoDetails.photo = self.photo;
-    photoDetails.delegate = self;
-    [self addChildViewController:photoDetails];
+    DetailsViewController *details = [[DetailsViewController alloc] init];
+    details.photo = self.photo;
+    details.delegate = self;
+    [self addChildViewController:details];
     CGRect frame = self.view.bounds;
     frame.origin.y = 110;
-    photoDetails.view.frame = frame;
-    [self.view addSubview:photoDetails.view];
-    [photoDetails didMoveToParentViewController:self];
+    details.view.frame = frame;
+    [self.view addSubview:details.view];
+    [details didMoveToParentViewController:self];
 }
 
 
@@ -49,7 +49,7 @@
 
 - (void)didSelectPhotoAttributeWithKey:(NSString *)key
 {
-    PhotoDetailViewController *detailViewController = [[PhotoDetailViewController alloc] init];
+    DetailViewController *detailViewController = [[DetailViewController alloc] init];
     detailViewController.key = key;
     [self.navigationController pushViewController:detailViewController animated:YES];
 }

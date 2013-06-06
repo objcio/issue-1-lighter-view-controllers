@@ -1,5 +1,5 @@
 //
-//  PhotoDetailViewController.h
+//  DetailViewController.h
 //  objc.io example project (issue #1)
 //
 
@@ -7,7 +7,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface PhotoDetailViewController : UIViewController
+@interface DetailViewController : UIViewController
 
 @property (nonatomic, strong) NSString *key;
 

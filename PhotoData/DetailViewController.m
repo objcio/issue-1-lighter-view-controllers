@@ -1,13 +1,13 @@
 //
-//  PhotoDetailViewController.m
+//  DetailViewController.m
 //  objc.io example project (issue #1)
 //
 
 
-#import "PhotoDetailViewController.h"
+#import "DetailViewController.h"
 
 
-@implementation PhotoDetailViewController
+@implementation DetailViewController
 
 - (void)viewDidLoad
 {
