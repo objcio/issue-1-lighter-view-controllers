@@ -34,7 +34,7 @@ static BOOL isRunningTests(void) __attribute__((const));
 
 @synthesize store = _store;
 
-- (Store *)store;
+- (Store *)store
 {
     if (_store == nil) {
         _store = [Store store];

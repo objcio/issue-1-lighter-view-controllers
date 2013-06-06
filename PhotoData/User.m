@@ -15,14 +15,14 @@ static NSString * const PhotosKey = @"photos";
 
 @implementation User
 
-- (NSString *)description;
+- (NSString *)description
 {
     NSString *formatString = @"<%@: %p> (%lld) \"%@\"";
     return [NSString stringWithFormat:formatString, [self class], self,
                                       (long long) self.identifier, self.username];
 }
 
-- (void)encodeWithCoder:(NSCoder *)coder;
+- (void)encodeWithCoder:(NSCoder *)coder
 {
     [coder encodeInt64:self.identifier forKey:IdentifierKey];
     [coder encodeObject:self.username forKey:UsernameKey];
@@ -31,7 +31,7 @@ static NSString * const PhotosKey = @"photos";
     [coder encodeObject:self.photos forKey:PhotosKey];
 }
 
-- (BOOL)requiresSecureCoding;
+- (BOOL)requiresSecureCoding
 {
     return YES;
 }

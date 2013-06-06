@@ -16,7 +16,7 @@
 
 @implementation ArrayDataSourceTests
 
-- (void)testInitializing;
+- (void)testInitializing
 {
     STAssertNil([[ArrayDataSource alloc] init], @"Should not be allowed.");
     
@@ -24,7 +24,7 @@
     STAssertNotNil(obj1, @"");
 }
 
-- (void)testCellConfiguration;
+- (void)testCellConfiguration
 {
     __block UITableViewCell *configuredCell = nil;
     __block id configuredObject = nil;
@@ -45,7 +45,7 @@
     STAssertEqualObjects(configuredObject, @"a", @"This should have been passed to the block.");
 }
 
-- (void)testNumberOfRows;
+- (void)testNumberOfRows
 {
     id mockTableView = [self autoVerifiedMockForClass:[UITableView class]];
     ArrayDataSource *dataSource = [[ArrayDataSource alloc] initWithItems:@[@"a", @"b"] cellIdentifier:@"foo" configureCellBlock:nil];

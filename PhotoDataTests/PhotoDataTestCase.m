@@ -31,27 +31,27 @@
     [super tearDown];
 }
 
-- (NSURL *)URLForResource:(NSString *)name withExtension:(NSString *)extension;
+- (NSURL *)URLForResource:(NSString *)name withExtension:(NSString *)extension
 {
     NSBundle *bundle = [NSBundle bundleForClass:[PhotoDataTestCase class]];
     return [bundle URLForResource:name withExtension:extension];
 }
 
-- (id)autoVerifiedMockForClass:(Class)aClass;
+- (id)autoVerifiedMockForClass:(Class)aClass
 {
     id mock = [OCMockObject mockForClass:aClass];
     [self verifyDuringTearDown:mock];
     return mock;
 }
 
-- (id)autoVerifiedPartialMockForObject:(id)object;
+- (id)autoVerifiedPartialMockForObject:(id)object
 {
     id mock = [OCMockObject partialMockForObject:object];
     [self verifyDuringTearDown:mock];
     return mock;
 }
 
-- (void)verifyDuringTearDown:(id)mock;
+- (void)verifyDuringTearDown:(id)mock
 {
     if (self.mocksToVerify == nil) {
         self.mocksToVerify = [NSMutableArray array];

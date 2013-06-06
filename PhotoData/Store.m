@@ -23,7 +23,7 @@
     return self;
 }
 
-- (void)readArchive;
+- (void)readArchive
 {
     NSURL *archiveURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"photodata" withExtension:@"bin"];
     NSAssert(archiveURL != nil, @"Unable to find archive in bundle.");

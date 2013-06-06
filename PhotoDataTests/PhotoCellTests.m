@@ -16,7 +16,7 @@
 
 @implementation PhotoCellTests
 
-- (void)testNibLoading;
+- (void)testNibLoading
 {
     UINib *nib = [PhotoCell nib];
     STAssertNotNil(nib, @"");

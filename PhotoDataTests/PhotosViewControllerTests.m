@@ -15,7 +15,7 @@
 
 @implementation PhotosViewControllerTests
 
-- (void)testNibLoading;
+- (void)testNibLoading
 {
     id mockNavController = [self autoVerifiedMockForClass:[UINavigationController class]];
     

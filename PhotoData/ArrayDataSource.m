@@ -17,7 +17,7 @@
 
 @implementation ArrayDataSource
 
-- (id)init;
+- (id)init
 {
     return nil;
 }

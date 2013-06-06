@@ -18,7 +18,7 @@
 
 @implementation ArchiveReadingTests
 
-- (void)testCreatingContex;
+- (void)testCreatingContex
 {
     Store* store = [Store store];
     STAssertNotNil(store, @"");
@@ -26,7 +26,7 @@
     STAssertNotNil(store.users, @"");
 }
 
-- (void)testPhotos;
+- (void)testPhotos
 {
     Store* store = [Store store];
     for (Photo *photo in store.photos) {
@@ -39,7 +39,7 @@
     }]] count], @"At leat 1 photo must have a name");
 }
 
-- (void)testUsers;
+- (void)testUsers
 {
     Store* store = [Store store];
     for (User *user in store.users) {

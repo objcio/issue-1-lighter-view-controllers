@@ -16,13 +16,13 @@ static NSString * const UserKey = @"user";
 
 @implementation Photo
 
-- (NSString*)description;
+- (NSString*)description
 {
     return [NSString stringWithFormat:@"<%@: %p> (%lld) \"%@\"",
             [self class], self, (long long) self.identifier, self.name];
 }
 
-- (void)encodeWithCoder:(NSCoder*)coder;
+- (void)encodeWithCoder:(NSCoder*)coder
 {
     [coder encodeInt64:self.identifier forKey:IdentifierKey];
     [coder encodeObject:self.name forKey:NameKey];
@@ -31,7 +31,7 @@ static NSString * const UserKey = @"user";
     [coder encodeConditionalObject:self.user forKey:UserKey];
 }
 
-- (BOOL)requiresSecureCoding;
+- (BOOL)requiresSecureCoding
 {
     return YES;
 }
