@@ -9,7 +9,7 @@
 
 @implementation Store
 
-+ (instancetype)store;
++ (instancetype)store
 {
     return [[self alloc] init];
 }

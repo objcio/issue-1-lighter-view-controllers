@@ -13,7 +13,7 @@ static BOOL isRunningTests(void) __attribute__((const));
 
 @implementation AppDelegate
 
-+ (instancetype)sharedDelegate;
++ (instancetype)sharedDelegate
 {
     return [UIApplication sharedApplication].delegate;
 }

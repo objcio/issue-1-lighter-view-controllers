@@ -13,7 +13,7 @@ static const float InactiveStarOpacity = .2;
 
 @implementation RatingCell
 
-+ (UINib *)nib;
++ (UINib *)nib
 {
     return [UINib nibWithNibName:@"RatingCell" bundle:nil];
 }

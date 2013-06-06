@@ -8,7 +8,7 @@
 
 @implementation PhotoCell
 
-+ (UINib *)nib;
++ (UINib *)nib
 {
     return [UINib nibWithNibName:@"PhotoCell" bundle:nil];
 }
