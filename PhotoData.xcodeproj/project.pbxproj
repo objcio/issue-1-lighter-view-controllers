@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17665B46175349E500FD9178 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17665B45175349E500FD9178 /* PhotoDetailViewController.xib */; };
+		17BC9A471750EC8D00736FCB /* RatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17BC9A461750EC8D00736FCB /* RatingCell.xib */; };
+		3E2DE0A51749087000D3BB5C /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DE0A41749087000D3BB5C /* Store.m */; };
+		3E2DE0A61749087000D3BB5C /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DE0A41749087000D3BB5C /* Store.m */; };
+		3E2DE0A817490A2300D3BB5C /* ArchiveReadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DE0A717490A2300D3BB5C /* ArchiveReadingTests.m */; };
+		3E2DE0AA17490C4C00D3BB5C /* photodata.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3E2DE0A917490C4C00D3BB5C /* photodata.bin */; };
+		3E2DE0AB17490C4C00D3BB5C /* photodata.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3E2DE0A917490C4C00D3BB5C /* photodata.bin */; };
+		3E2DE0AC17490C5E00D3BB5C /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDCF5174614350015841B /* Photo.m */; };
+		3E2DE0AE17490C7000D3BB5C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDCF7174614350015841B /* User.m */; };
+		3E2DE0D9174D398F00D3BB5C /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2DE0D8174D388900D3BB5C /* libOCMock.a */; };
+		3E2DE0DB174D3C0900D3BB5C /* ArrayDataSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DE0DA174D3C0900D3BB5C /* ArrayDataSourceTest.m */; };
+		3E98ED641753F8F900D84B2D /* PhotoCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E98ED631753F8F900D84B2D /* PhotoCellTests.m */; };
+		3E98ED691753F9DB00D84B2D /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD02174617FE0015841B /* PhotoCell.xib */; };
+		3E98EDB9175537AB00D84B2D /* PhotosViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E98EDB8175537AB00D84B2D /* PhotosViewControllerTests.m */; };
+		5A4161414A3AD672B20FD722 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A416BA6F139F61955B8A734 /* PhotoCell.m */; };
+		5A41661336B73FD84E0AE9F7 /* photo-data.bin in Resources */ = {isa = PBXBuildFile; fileRef = 5A4167C9F2D7F9A75737E49A /* photo-data.bin */; };
+		5A41683AB29142F1EA465D3A /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4168CD64B1A9D8E1817D2E /* ArrayDataSource.m */; };
+		830DDCBA174613080015841B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCB9174613080015841B /* UIKit.framework */; };
+		830DDCBC174613080015841B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCBB174613080015841B /* Foundation.framework */; };
+		830DDCBE174613080015841B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCBD174613080015841B /* CoreGraphics.framework */; };
+		830DDCC6174613080015841B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCC4174613080015841B /* InfoPlist.strings */; };
+		830DDCC8174613080015841B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDCC7174613080015841B /* main.m */; };
+		830DDCCC174613080015841B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDCCB174613080015841B /* AppDelegate.m */; };
+		830DDCCE174613080015841B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCCD174613080015841B /* Default.png */; };
+		830DDCD0174613080015841B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCCF174613080015841B /* Default@2x.png */; };
+		830DDCD2174613080015841B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCD1174613080015841B /* Default-568h@2x.png */; };
+		830DDCDD174613080015841B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCDC174613080015841B /* SenTestingKit.framework */; };
+		830DDCDE174613080015841B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCB9174613080015841B /* UIKit.framework */; };
+		830DDCDF174613080015841B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCBB174613080015841B /* Foundation.framework */; };
+		830DDCE0174613080015841B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCBF174613080015841B /* CoreData.framework */; };
+		830DDCE8174613080015841B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCE6174613080015841B /* InfoPlist.strings */; };
+		830DDCEB174613080015841B /* PhotoDataTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDCEA174613080015841B /* PhotoDataTestCase.m */; };
+		830DDCFA174614420015841B /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDCF5174614350015841B /* Photo.m */; };
+		830DDCFB174614450015841B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDCF7174614350015841B /* User.m */; };
+		830DDD00174614A70015841B /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDCFE174614A70015841B /* PhotosViewController.m */; };
+		830DDD01174614A70015841B /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCFF174614A70015841B /* PhotosViewController.xib */; };
+		830DDD03174617FE0015841B /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD02174617FE0015841B /* PhotoCell.xib */; };
+		830DDD071746519D0015841B /* PhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDD051746519D0015841B /* PhotoDetailsViewController.m */; };
+		830DDD081746519D0015841B /* PhotoDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD061746519D0015841B /* PhotoDetailsViewController.xib */; };
+		D25890E33A3AD8C0885078EA /* PhotoCell+ConfigureForPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D2589AFB9CE73CC0AD9D1CA4 /* PhotoCell+ConfigureForPhoto.m */; };
+		D25890F660237AAA12DBBD2D /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D25892E710DF8060436CED81 /* star.png */; };
+		D258949FDEA7F05E64E81AA3 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D258947BF23A96188E749F91 /* PhotoViewController.m */; };
+		D25898830BD647EB11375F80 /* RatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D258987FABC3EFFC517F5659 /* RatingCell.m */; };
+		D25898C45A38682AC37C3311 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25893599811A7F4D7E9583B /* PhotoDetailViewController.m */; };
+		D2589A43874AB43F29E2B5D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25895CDCFADCFB9EA3E61C7 /* QuartzCore.framework */; };
+		D2589A50DBD77828B4C7C0A7 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D25897EEE1FD9DB3B3F85D2F /* star@2x.png */; };
+		D2589ED42B476CE696EA172A /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25893A25688870E26562CC7 /* PhotoViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E2DE0D3174D388900D3BB5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E2DE0CD174D388800D3BB5C /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0A814632FD000B04273;
+			remoteInfo = OCMock;
+		};
+		3E2DE0D5174D388900D3BB5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E2DE0CD174D388800D3BB5C /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0C014632FD000B04273;
+			remoteInfo = OCMockTests;
+		};
+		3E2DE0D7174D388900D3BB5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E2DE0CD174D388800D3BB5C /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0DC14632FF700B04273;
+			remoteInfo = OCMockLib;
+		};
+		830DDCE1174613080015841B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 830DDCAE174613080015841B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830DDCB5174613080015841B;
+			remoteInfo = PhotoData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17665B45175349E500FD9178 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
+		17BC9A461750EC8D00736FCB /* RatingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingCell.xib; sourceTree = "<group>"; };
+		3E2DE0A31749087000D3BB5C /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		3E2DE0A41749087000D3BB5C /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		3E2DE0A717490A2300D3BB5C /* ArchiveReadingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchiveReadingTests.m; sourceTree = "<group>"; };
+		3E2DE0A917490C4C00D3BB5C /* photodata.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = photodata.bin; sourceTree = "<group>"; };
+		3E2DE0CD174D388800D3BB5C /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = Submodules/ocmock/Source/OCMock.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3E2DE0DA174D3C0900D3BB5C /* ArrayDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSourceTest.m; sourceTree = "<group>"; };
+		3E98ED631753F8F900D84B2D /* PhotoCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCellTests.m; sourceTree = "<group>"; };
+		3E98EDB8175537AB00D84B2D /* PhotosViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewControllerTests.m; sourceTree = "<group>"; };
+		5A41644672B329C01770FCEE /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		5A4167C9F2D7F9A75737E49A /* photo-data.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "photo-data.bin"; sourceTree = "<group>"; };
+		5A4168CD64B1A9D8E1817D2E /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		5A416A69CD8F176AD362E6B0 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		5A416BA6F139F61955B8A734 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		830DDCB6174613080015841B /* PhotoData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830DDCB9174613080015841B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		830DDCBB174613080015841B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		830DDCBD174613080015841B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		830DDCBF174613080015841B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		830DDCC3174613080015841B /* PhotoData-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoData-Info.plist"; sourceTree = "<group>"; };
+		830DDCC5174613080015841B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		830DDCC7174613080015841B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		830DDCC9174613080015841B /* PhotoData-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoData-Prefix.pch"; sourceTree = "<group>"; };
+		830DDCCA174613080015841B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		830DDCCB174613080015841B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		830DDCCD174613080015841B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		830DDCCF174613080015841B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		830DDCD1174613080015841B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		830DDCDB174613080015841B /* PhotoDataTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoDataTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		830DDCDC174613080015841B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		830DDCE5174613080015841B /* PhotoDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoDataTests-Info.plist"; sourceTree = "<group>"; };
+		830DDCE7174613080015841B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		830DDCE9174613080015841B /* PhotoDataTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoDataTestCase.h; sourceTree = "<group>"; };
+		830DDCEA174613080015841B /* PhotoDataTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoDataTestCase.m; sourceTree = "<group>"; };
+		830DDCF4174614350015841B /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		830DDCF5174614350015841B /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		830DDCF6174614350015841B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		830DDCF7174614350015841B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		830DDCFD174614A70015841B /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		830DDCFE174614A70015841B /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		830DDCFF174614A70015841B /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
+		830DDD02174617FE0015841B /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		830DDD041746519D0015841B /* PhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailsViewController.h; sourceTree = "<group>"; };
+		830DDD051746519D0015841B /* PhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailsViewController.m; sourceTree = "<group>"; };
+		830DDD061746519D0015841B /* PhotoDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailsViewController.xib; sourceTree = "<group>"; };
+		D258909D508549D9B89832C5 /* RatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingCell.h; sourceTree = "<group>"; };
+		D25892E710DF8060436CED81 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		D25893599811A7F4D7E9583B /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
+		D25893A25688870E26562CC7 /* PhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		D25893EFF33ADD7635B67A14 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		D258947BF23A96188E749F91 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		D258948A71340D80EC5D9C27 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		D25895CDCFADCFB9EA3E61C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D25897EEE1FD9DB3B3F85D2F /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		D258987FABC3EFFC517F5659 /* RatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingCell.m; sourceTree = "<group>"; };
+		D2589996E957E8E4CB73DA85 /* PhotoCell+ConfigureForPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotoCell+ConfigureForPhoto.h"; sourceTree = "<group>"; };
+		D2589AFB9CE73CC0AD9D1CA4 /* PhotoCell+ConfigureForPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhotoCell+ConfigureForPhoto.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		830DDCB3174613080015841B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830DDCBA174613080015841B /* UIKit.framework in Frameworks */,
+				830DDCBC174613080015841B /* Foundation.framework in Frameworks */,
+				830DDCBE174613080015841B /* CoreGraphics.framework in Frameworks */,
+				D2589A43874AB43F29E2B5D6 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830DDCD7174613080015841B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2DE0D9174D398F00D3BB5C /* libOCMock.a in Frameworks */,
+				830DDCDD174613080015841B /* SenTestingKit.framework in Frameworks */,
+				830DDCDE174613080015841B /* UIKit.framework in Frameworks */,
+				830DDCDF174613080015841B /* Foundation.framework in Frameworks */,
+				830DDCE0174613080015841B /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E2DE0CE174D388800D3BB5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E2DE0D4174D388900D3BB5C /* OCMock.framework */,
+				3E2DE0D6174D388900D3BB5C /* OCMockTests.octest */,
+				3E2DE0D8174D388900D3BB5C /* libOCMock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		830DDCAD174613080015841B = {
+			isa = PBXGroup;
+			children = (
+				830DDCC1174613080015841B /* PhotoData */,
+				830DDCE3174613080015841B /* PhotoDataTests */,
+				830DDCB8174613080015841B /* Frameworks */,
+				830DDCB7174613080015841B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		830DDCB7174613080015841B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				830DDCB6174613080015841B /* PhotoData.app */,
+				830DDCDB174613080015841B /* PhotoDataTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		830DDCB8174613080015841B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				830DDCB9174613080015841B /* UIKit.framework */,
+				830DDCBB174613080015841B /* Foundation.framework */,
+				830DDCBD174613080015841B /* CoreGraphics.framework */,
+				830DDCBF174613080015841B /* CoreData.framework */,
+				830DDCDC174613080015841B /* SenTestingKit.framework */,
+				D25895CDCFADCFB9EA3E61C7 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		830DDCC1174613080015841B /* PhotoData */ = {
+			isa = PBXGroup;
+			children = (
+				830DDCFC1746144A0015841B /* Model */,
+				830DDCCA174613080015841B /* AppDelegate.h */,
+				830DDCCB174613080015841B /* AppDelegate.m */,
+				830DDCC2174613080015841B /* Supporting Files */,
+				830DDCFD174614A70015841B /* PhotosViewController.h */,
+				830DDCFE174614A70015841B /* PhotosViewController.m */,
+				830DDCFF174614A70015841B /* PhotosViewController.xib */,
+				830DDD02174617FE0015841B /* PhotoCell.xib */,
+				5A416BA6F139F61955B8A734 /* PhotoCell.m */,
+				5A41644672B329C01770FCEE /* PhotoCell.h */,
+				17BC9A461750EC8D00736FCB /* RatingCell.xib */,
+				830DDD041746519D0015841B /* PhotoDetailsViewController.h */,
+				830DDD051746519D0015841B /* PhotoDetailsViewController.m */,
+				830DDD061746519D0015841B /* PhotoDetailsViewController.xib */,
+				5A4168CD64B1A9D8E1817D2E /* ArrayDataSource.m */,
+				5A416A69CD8F176AD362E6B0 /* ArrayDataSource.h */,
+				D2589AFB9CE73CC0AD9D1CA4 /* PhotoCell+ConfigureForPhoto.m */,
+				D2589996E957E8E4CB73DA85 /* PhotoCell+ConfigureForPhoto.h */,
+				D25892E6B979C5FC4FCDFEC5 /* Resources */,
+				D258987FABC3EFFC517F5659 /* RatingCell.m */,
+				D258909D508549D9B89832C5 /* RatingCell.h */,
+				D258947BF23A96188E749F91 /* PhotoViewController.m */,
+				D258948A71340D80EC5D9C27 /* PhotoViewController.h */,
+				D25893A25688870E26562CC7 /* PhotoViewController.xib */,
+				D25893599811A7F4D7E9583B /* PhotoDetailViewController.m */,
+				17665B45175349E500FD9178 /* PhotoDetailViewController.xib */,
+				D25893EFF33ADD7635B67A14 /* PhotoDetailViewController.h */,
+			);
+			path = PhotoData;
+			sourceTree = "<group>";
+		};
+		830DDCC2174613080015841B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				830DDCC3174613080015841B /* PhotoData-Info.plist */,
+				830DDCC4174613080015841B /* InfoPlist.strings */,
+				830DDCC7174613080015841B /* main.m */,
+				830DDCC9174613080015841B /* PhotoData-Prefix.pch */,
+				830DDCCD174613080015841B /* Default.png */,
+				830DDCCF174613080015841B /* Default@2x.png */,
+				830DDCD1174613080015841B /* Default-568h@2x.png */,
+				5A4167C9F2D7F9A75737E49A /* photo-data.bin */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		830DDCE3174613080015841B /* PhotoDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E2DE0CD174D388800D3BB5C /* OCMock.xcodeproj */,
+				830DDCE9174613080015841B /* PhotoDataTestCase.h */,
+				830DDCEA174613080015841B /* PhotoDataTestCase.m */,
+				3E2DE0A717490A2300D3BB5C /* ArchiveReadingTests.m */,
+				3E2DE0DA174D3C0900D3BB5C /* ArrayDataSourceTest.m */,
+				3E98ED631753F8F900D84B2D /* PhotoCellTests.m */,
+				3E98EDB8175537AB00D84B2D /* PhotosViewControllerTests.m */,
+				830DDCE4174613080015841B /* Supporting Files */,
+			);
+			path = PhotoDataTests;
+			sourceTree = "<group>";
+		};
+		830DDCE4174613080015841B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				830DDCE5174613080015841B /* PhotoDataTests-Info.plist */,
+				830DDCE6174613080015841B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		830DDCFC1746144A0015841B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E2DE0A917490C4C00D3BB5C /* photodata.bin */,
+				3E2DE0A31749087000D3BB5C /* Store.h */,
+				3E2DE0A41749087000D3BB5C /* Store.m */,
+				830DDCF4174614350015841B /* Photo.h */,
+				830DDCF5174614350015841B /* Photo.m */,
+				830DDCF6174614350015841B /* User.h */,
+				830DDCF7174614350015841B /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D25892E6B979C5FC4FCDFEC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D25897EEE1FD9DB3B3F85D2F /* star@2x.png */,
+				D25892E710DF8060436CED81 /* star.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		830DDCB5174613080015841B /* PhotoData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830DDCEE174613080015841B /* Build configuration list for PBXNativeTarget "PhotoData" */;
+			buildPhases = (
+				830DDCB2174613080015841B /* Sources */,
+				830DDCB3174613080015841B /* Frameworks */,
+				830DDCB4174613080015841B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoData;
+			productName = PhotoData;
+			productReference = 830DDCB6174613080015841B /* PhotoData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		830DDCDA174613080015841B /* PhotoDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830DDCF1174613080015841B /* Build configuration list for PBXNativeTarget "PhotoDataTests" */;
+			buildPhases = (
+				830DDCD6174613080015841B /* Sources */,
+				830DDCD7174613080015841B /* Frameworks */,
+				830DDCD8174613080015841B /* Resources */,
+				830DDCD9174613080015841B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830DDCE2174613080015841B /* PBXTargetDependency */,
+			);
+			name = PhotoDataTests;
+			productName = PhotoDataTests;
+			productReference = 830DDCDB174613080015841B /* PhotoDataTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		830DDCAE174613080015841B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OBJ;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = objc.io;
+			};
+			buildConfigurationList = 830DDCB1174613080015841B /* Build configuration list for PBXProject "PhotoData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 830DDCAD174613080015841B;
+			productRefGroup = 830DDCB7174613080015841B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3E2DE0CE174D388800D3BB5C /* Products */;
+					ProjectRef = 3E2DE0CD174D388800D3BB5C /* OCMock.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				830DDCB5174613080015841B /* PhotoData */,
+				830DDCDA174613080015841B /* PhotoDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3E2DE0D4174D388900D3BB5C /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 3E2DE0D3174D388900D3BB5C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3E2DE0D6174D388900D3BB5C /* OCMockTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockTests.octest;
+			remoteRef = 3E2DE0D5174D388900D3BB5C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3E2DE0D8174D388900D3BB5C /* libOCMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOCMock.a;
+			remoteRef = 3E2DE0D7174D388900D3BB5C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		830DDCB4174613080015841B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830DDCC6174613080015841B /* InfoPlist.strings in Resources */,
+				830DDCCE174613080015841B /* Default.png in Resources */,
+				830DDCD0174613080015841B /* Default@2x.png in Resources */,
+				830DDCD2174613080015841B /* Default-568h@2x.png in Resources */,
+				830DDD01174614A70015841B /* PhotosViewController.xib in Resources */,
+				5A41661336B73FD84E0AE9F7 /* photo-data.bin in Resources */,
+				830DDD03174617FE0015841B /* PhotoCell.xib in Resources */,
+				830DDD081746519D0015841B /* PhotoDetailsViewController.xib in Resources */,
+				3E2DE0AA17490C4C00D3BB5C /* photodata.bin in Resources */,
+				D2589A50DBD77828B4C7C0A7 /* star@2x.png in Resources */,
+				D25890F660237AAA12DBBD2D /* star.png in Resources */,
+				17BC9A471750EC8D00736FCB /* RatingCell.xib in Resources */,
+				D2589ED42B476CE696EA172A /* PhotoViewController.xib in Resources */,
+				17665B46175349E500FD9178 /* PhotoDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830DDCD8174613080015841B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830DDCE8174613080015841B /* InfoPlist.strings in Resources */,
+				3E2DE0AB17490C4C00D3BB5C /* photodata.bin in Resources */,
+				3E98ED691753F9DB00D84B2D /* PhotoCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		830DDCD9174613080015841B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		830DDCB2174613080015841B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830DDCC8174613080015841B /* main.m in Sources */,
+				830DDCCC174613080015841B /* AppDelegate.m in Sources */,
+				830DDCFA174614420015841B /* Photo.m in Sources */,
+				830DDCFB174614450015841B /* User.m in Sources */,
+				830DDD00174614A70015841B /* PhotosViewController.m in Sources */,
+				5A4161414A3AD672B20FD722 /* PhotoCell.m in Sources */,
+				830DDD071746519D0015841B /* PhotoDetailsViewController.m in Sources */,
+				3E2DE0A51749087000D3BB5C /* Store.m in Sources */,
+				5A41683AB29142F1EA465D3A /* ArrayDataSource.m in Sources */,
+				D25890E33A3AD8C0885078EA /* PhotoCell+ConfigureForPhoto.m in Sources */,
+				D25898830BD647EB11375F80 /* RatingCell.m in Sources */,
+				D258949FDEA7F05E64E81AA3 /* PhotoViewController.m in Sources */,
+				D25898C45A38682AC37C3311 /* PhotoDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830DDCD6174613080015841B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830DDCEB174613080015841B /* PhotoDataTestCase.m in Sources */,
+				3E2DE0A61749087000D3BB5C /* Store.m in Sources */,
+				3E2DE0A817490A2300D3BB5C /* ArchiveReadingTests.m in Sources */,
+				3E2DE0AC17490C5E00D3BB5C /* Photo.m in Sources */,
+				3E2DE0AE17490C7000D3BB5C /* User.m in Sources */,
+				3E2DE0DB174D3C0900D3BB5C /* ArrayDataSourceTest.m in Sources */,
+				3E98ED641753F8F900D84B2D /* PhotoCellTests.m in Sources */,
+				3E98EDB9175537AB00D84B2D /* PhotosViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		830DDCE2174613080015841B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830DDCB5174613080015841B /* PhotoData */;
+			targetProxy = 830DDCE1174613080015841B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		830DDCC4174613080015841B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830DDCC5174613080015841B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		830DDCE6174613080015841B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830DDCE7174613080015841B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		830DDCEC174613080015841B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		830DDCED174613080015841B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		830DDCEF174613080015841B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
+				INFOPLIST_FILE = "PhotoData/PhotoData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		830DDCF0174613080015841B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
+				INFOPLIST_FILE = "PhotoData/PhotoData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		830DDCF2174613080015841B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoData.app/PhotoData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${TARGET_BUILD_DIR}\"";
+				INFOPLIST_FILE = "PhotoDataTests/PhotoDataTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		830DDCF3174613080015841B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoData.app/PhotoData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${TARGET_BUILD_DIR}\"";
+				INFOPLIST_FILE = "PhotoDataTests/PhotoDataTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		830DDCB1174613080015841B /* Build configuration list for PBXProject "PhotoData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830DDCEC174613080015841B /* Debug */,
+				830DDCED174613080015841B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830DDCEE174613080015841B /* Build configuration list for PBXNativeTarget "PhotoData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830DDCEF174613080015841B /* Debug */,
+				830DDCF0174613080015841B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830DDCF1174613080015841B /* Build configuration list for PBXNativeTarget "PhotoDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830DDCF2174613080015841B /* Debug */,
+				830DDCF3174613080015841B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 830DDCAE174613080015841B /* Project object */;
+}
