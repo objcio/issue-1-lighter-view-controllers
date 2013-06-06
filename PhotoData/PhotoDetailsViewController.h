@@ -1,6 +1,6 @@
 //
 //  PhotoDetailsViewController.h
-//  objc.io example project (edition #1)
+//  objc.io example project (issue #1)
 //
 
 #import <UIKit/UIKit.h>

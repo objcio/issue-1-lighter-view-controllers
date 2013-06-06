@@ -1,6 +1,6 @@
 //
 //  User.m
-//  objc.io example project (edition #1)
+//  objc.io example project (issue #1)
 //
 
 #import "User.h"
@@ -17,8 +17,9 @@ static NSString * const PhotosKey = @"photos";
 
 - (NSString *)description;
 {
-    return [NSString stringWithFormat:@"<%@: %p> (%lld) \"%@\"",
-                                      [self class], self, (long long) self.identifier, self.username];
+    NSString *formatString = @"<%@: %p> (%lld) \"%@\"";
+    return [NSString stringWithFormat:formatString, [self class], self,
+                                      (long long) self.identifier, self.username];
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder;

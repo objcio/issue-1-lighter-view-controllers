@@ -1,6 +1,6 @@
 //
 //  ArchiveReadingTests.m
-//  objc.io example project (edition #1)
+//  objc.io example project (issue #1)
 //
 
 #import "PhotoDataTestCase.h"
