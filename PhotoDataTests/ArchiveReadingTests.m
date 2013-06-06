@@ -18,7 +18,7 @@
 
 @implementation ArchiveReadingTests
 
-- (void)testCreatingContex
+- (void)testCreatingStore
 {
     Store* store = [Store store];
     STAssertNotNil(store, @"");
