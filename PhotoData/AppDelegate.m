@@ -23,6 +23,7 @@ static BOOL isRunningTests(void) __attribute__((const));
     if (isRunningTests()) {
         return YES;
     }
+
     PhotosViewController *photosViewController = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController"
                                                                                               bundle:nil];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:photosViewController];
@@ -47,5 +48,6 @@ static BOOL isRunningTests(void) __attribute__((const));
 
 static BOOL isRunningTests(void)
 {
-    return [[[[NSProcessInfo processInfo] environment][@"XCInjectBundle"] pathExtension] isEqualToString:@"octest"];
+    NSLog(@"%@", [[NSProcessInfo processInfo] environment][@"XCInjectBundle"]);
+    return [[[[NSProcessInfo processInfo] environment][@"XCInjectBundle"] pathExtension] isEqualToString:@"xctest"];
 }

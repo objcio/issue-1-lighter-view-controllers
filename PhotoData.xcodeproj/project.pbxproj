@@ -33,7 +33,6 @@
 		830DDCCE174613080015841B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCCD174613080015841B /* Default.png */; };
 		830DDCD0174613080015841B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCCF174613080015841B /* Default@2x.png */; };
 		830DDCD2174613080015841B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 830DDCD1174613080015841B /* Default-568h@2x.png */; };
-		830DDCDD174613080015841B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCDC174613080015841B /* SenTestingKit.framework */; };
 		830DDCDE174613080015841B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCB9174613080015841B /* UIKit.framework */; };
 		830DDCDF174613080015841B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCBB174613080015841B /* Foundation.framework */; };
 		830DDCE0174613080015841B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830DDCBF174613080015841B /* CoreData.framework */; };
@@ -46,6 +45,7 @@
 		830DDD03174617FE0015841B /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD02174617FE0015841B /* PhotoCell.xib */; };
 		830DDD071746519D0015841B /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830DDD051746519D0015841B /* DetailsViewController.m */; };
 		830DDD081746519D0015841B /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830DDD061746519D0015841B /* DetailsViewController.xib */; };
+		A9B4796119041AFC008C9E02 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B4796019041AFC008C9E02 /* XCTest.framework */; };
 		D25890E33A3AD8C0885078EA /* PhotoCell+ConfigureForPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D2589AFB9CE73CC0AD9D1CA4 /* PhotoCell+ConfigureForPhoto.m */; };
 		D25890F660237AAA12DBBD2D /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D25892E710DF8060436CED81 /* star.png */; };
 		D258949FDEA7F05E64E81AA3 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D258947BF23A96188E749F91 /* PhotoViewController.m */; };
@@ -117,8 +117,7 @@
 		830DDCCD174613080015841B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		830DDCCF174613080015841B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		830DDCD1174613080015841B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		830DDCDB174613080015841B /* PhotoDataTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoDataTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		830DDCDC174613080015841B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		830DDCDB174613080015841B /* PhotoDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		830DDCE5174613080015841B /* PhotoDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoDataTests-Info.plist"; sourceTree = "<group>"; };
 		830DDCE7174613080015841B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		830DDCE9174613080015841B /* PhotoDataTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoDataTestCase.h; sourceTree = "<group>"; };
@@ -134,6 +133,7 @@
 		830DDD041746519D0015841B /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		830DDD051746519D0015841B /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		830DDD061746519D0015841B /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		A9B4796019041AFC008C9E02 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D258909D508549D9B89832C5 /* RatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingCell.h; sourceTree = "<group>"; };
 		D25892E710DF8060436CED81 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		D25893599811A7F4D7E9583B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
@@ -164,8 +164,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B4796119041AFC008C9E02 /* XCTest.framework in Frameworks */,
 				3E2DE0D9174D398F00D3BB5C /* libOCMock.a in Frameworks */,
-				830DDCDD174613080015841B /* SenTestingKit.framework in Frameworks */,
 				830DDCDE174613080015841B /* UIKit.framework in Frameworks */,
 				830DDCDF174613080015841B /* Foundation.framework in Frameworks */,
 				830DDCE0174613080015841B /* CoreData.framework in Frameworks */,
@@ -199,7 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				830DDCB6174613080015841B /* PhotoData.app */,
-				830DDCDB174613080015841B /* PhotoDataTests.octest */,
+				830DDCDB174613080015841B /* PhotoDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,11 +207,11 @@
 		830DDCB8174613080015841B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9B4796019041AFC008C9E02 /* XCTest.framework */,
 				830DDCB9174613080015841B /* UIKit.framework */,
 				830DDCBB174613080015841B /* Foundation.framework */,
 				830DDCBD174613080015841B /* CoreGraphics.framework */,
 				830DDCBF174613080015841B /* CoreData.framework */,
-				830DDCDC174613080015841B /* SenTestingKit.framework */,
 				D25895CDCFADCFB9EA3E61C7 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
@@ -349,8 +349,8 @@
 			);
 			name = PhotoDataTests;
 			productName = PhotoDataTests;
-			productReference = 830DDCDB174613080015841B /* PhotoDataTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 830DDCDB174613080015841B /* PhotoDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -359,7 +359,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = OBJ;
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = objc.io;
 			};
 			buildConfigurationList = 830DDCB1174613080015841B /* Build configuration list for PBXProject "PhotoData" */;
@@ -603,8 +604,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoData.app/PhotoData";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"/**",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
@@ -613,7 +615,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -622,8 +624,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoData.app/PhotoData";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"/**",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoData/PhotoData-Prefix.pch";
@@ -632,7 +635,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};

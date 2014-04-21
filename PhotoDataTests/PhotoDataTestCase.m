@@ -25,7 +25,15 @@
 - (void)tearDown
 {
     for (id mock in self.mocksToVerify) {
-        [mock verify];
+        @try {
+            [mock verify];
+        }
+        @catch (NSException *exception) {
+             NSLog(@"%@",[NSThread callStackSymbols]);
+        }
+        @finally {
+            
+        }
     }
     self.mocksToVerify = nil;
     [super tearDown];
@@ -58,5 +66,6 @@
     }
     [self.mocksToVerify addObject:mock];
 }
+
 
 @end
