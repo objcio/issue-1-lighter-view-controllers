@@ -20,14 +20,15 @@ static BOOL isRunningTests(void) __attribute__((const));
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    if (isRunningTests()) {
+        return YES;
+    }
+
     PhotosViewController *photosViewController = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController"
                                                                                               bundle:nil];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:photosViewController];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    if (isRunningTests() == NO) {
-        [self.window setRootViewController:navigationController];
-
-    }
+    [self.window setRootViewController:navigationController];
     [self.window makeKeyAndVisible];
     return YES;
 }
