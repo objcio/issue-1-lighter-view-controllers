@@ -20,14 +20,14 @@ static BOOL isRunningTests(void) __attribute__((const));
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    if (isRunningTests()) {
-        return YES;
-    }
     PhotosViewController *photosViewController = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController"
                                                                                               bundle:nil];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:photosViewController];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window setRootViewController:navigationController];
+    if (isRunningTests() == NO) {
+        [self.window setRootViewController:navigationController];
+
+    }
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -47,5 +47,6 @@ static BOOL isRunningTests(void) __attribute__((const));
 
 static BOOL isRunningTests(void)
 {
-    return [[[[NSProcessInfo processInfo] environment][@"XCInjectBundle"] pathExtension] isEqualToString:@"octest"];
+    NSLog(@"%@", [[NSProcessInfo processInfo] environment][@"XCInjectBundle"]);
+    return [[[[NSProcessInfo processInfo] environment][@"XCInjectBundle"] pathExtension] isEqualToString:@"xctest"];
 }

@@ -6,6 +6,7 @@
 #import "PhotoDataTestCase.h"
 #import "PhotosViewController.h"
 #import "PhotoViewController.h"
+#import "AppDelegate.h"
 
 
 @interface PhotosViewControllerTests : PhotoDataTestCase
@@ -17,15 +18,17 @@
 
 - (void)testNibLoading
 {
-    id mockNavController = [self autoVerifiedMockForClass:[UINavigationController class]];
+    UINavigationController *nav = [[UINavigationController alloc] init];
+    id navMock = [self autoVerifiedPartialMockForObject:nav];
     
     // Create an instance that has the given navigation controller mock:
-    PhotosViewController *photosViewController = [[PhotosViewController alloc] init];
+    PhotosViewController *photosViewController = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController" bundle:nil];
     id photosViewControllerMock = [self autoVerifiedPartialMockForObject:photosViewController];
-    [[[photosViewControllerMock stub] andReturn:mockNavController] navigationController];
+    [[[photosViewControllerMock stub] andReturn:nav] navigationController];
+
     
     // We expect a PhotoViewController instance to be pushed onto the nav controller:
-    [[mockNavController expect] pushViewController:[OCMArg checkWithBlock:^BOOL(id obj) {
+    [[navMock expect] pushViewController:[OCMArg checkWithBlock:^BOOL(id obj) {
         PhotoViewController *vc = obj;
         return ([vc isKindOfClass:[PhotoViewController class]] &&
                 (vc.photo != nil));
@@ -33,7 +36,8 @@
     
     // Trigger view did load:
     UIView *view = photosViewController.view;
-    STAssertNotNil(view, @"");
+    NSLog(@"view is: %@", view);
+    XCTAssertNotNil(view, @"view should not be nit");
     // Simulate a tap on the row:
     [photosViewController tableView:photosViewController.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 }

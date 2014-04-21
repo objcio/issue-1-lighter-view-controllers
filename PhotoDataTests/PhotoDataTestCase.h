@@ -3,7 +3,7 @@
 //  objc.io example project (issue #1)
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
 
 
@@ -19,7 +19,7 @@
 
 
 /// Base class for tests
-@interface PhotoDataTestCase : SenTestCase
+@interface PhotoDataTestCase : XCTestCase
 
 - (void)setUp NS_REQUIRES_SUPER;
 - (void)tearDown NS_REQUIRES_SUPER;

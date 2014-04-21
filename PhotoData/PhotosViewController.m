@@ -52,7 +52,8 @@ static NSString * const PhotoCellIdentifier = @"PhotoCell";
     PhotoViewController *photoViewController = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController"
                                                                                      bundle:nil];
     photoViewController.photo = [self.photosArrayDataSource itemAtIndexPath:indexPath];
-    [self.navigationController pushViewController:photoViewController animated:YES];
+    UINavigationController *nav = self.navigationController;
+    [nav pushViewController:photoViewController animated:YES];
 }
 
 @end

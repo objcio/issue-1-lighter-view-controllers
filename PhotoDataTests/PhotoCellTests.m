@@ -19,16 +19,16 @@
 - (void)testNibLoading
 {
     UINib *nib = [PhotoCell nib];
-    STAssertNotNil(nib, @"");
+    XCTAssertNotNil(nib, @"");
     
     NSArray *a = [nib instantiateWithOwner:nil options:@{}];
-    STAssertEquals([a count], (NSUInteger) 1, @"");
+    XCTAssertEqual([a count], (NSUInteger) 1, @"");
     PhotoCell *cell = a[0];
-    STAssertTrue([cell isMemberOfClass:[PhotoCell class]], @"");
+    XCTAssertTrue([cell isMemberOfClass:[PhotoCell class]], @"");
     
     // Check that outlets are set up correctly:
-    STAssertNotNil(cell.photoTitleLabel, @"");
-    STAssertNotNil(cell.photoDateLabel, @"");
+    XCTAssertNotNil(cell.photoTitleLabel, @"");
+    XCTAssertNotNil(cell.photoDateLabel, @"");
 }
 
 @end
