@@ -9,6 +9,7 @@
 
 static const int MaximumNumberOfStars = 5;
 static const float InactiveStarOpacity = .2;
+static const int StarViewTagOffset = 100;
 
 
 @implementation RatingCell
@@ -30,7 +31,7 @@ static const float InactiveStarOpacity = .2;
 {
     NSUInteger numberOfStars = (NSUInteger) ceilf((float) (rating * MaximumNumberOfStars));
     for (NSUInteger idx = 0; idx < MaximumNumberOfStars; idx++) {
-        UIView *starView = self.contentView.subviews[idx];
+        UIView *starView = [self.contentView viewWithTag:StarViewTagOffset + idx];
         starView.alpha = numberOfStars > idx ? 1 : InactiveStarOpacity;
     }
 }
