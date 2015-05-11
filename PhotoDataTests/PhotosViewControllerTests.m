@@ -17,7 +17,7 @@
 
 - (void)testNibLoading
 {
-    id mockNavController = [self autoVerifiedMockForClass:[UINavigationController class]];
+    id mockNavController = [self autoVerifiedPartialMockForObject:[[UINavigationController alloc] init]];
     
     // Create an instance that has the given navigation controller mock:
     PhotosViewController *photosViewController = [[PhotosViewController alloc] init];
