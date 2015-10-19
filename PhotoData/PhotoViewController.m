@@ -28,7 +28,7 @@
 {
     self.navigationItem.title = self.photo.name;
     self.authorLabel.text = self.photo.authorFullName;
-    self.photosTakenLabel.text = [NSString stringWithFormat:@"%d", self.photo.user.numberOfPhotosTaken];
+    self.photosTakenLabel.text = [NSString stringWithFormat:@"%lu", self.photo.user.numberOfPhotosTaken];
 }
 
 - (void)addPhotoDetailsTableView
@@ -49,7 +49,7 @@
 
 - (void)didSelectPhotoAttributeWithKey:(NSString *)key
 {
-    DetailViewController *detailViewController = [[DetailViewController alloc] init];
+    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"PhotoDetailViewController" bundle:nil];
     detailViewController.key = key;
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
